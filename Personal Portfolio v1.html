@@ -5,6 +5,7 @@
             <meta description="Personal Portfolio">
             <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="Personal Portfolio v1 styles.css">
+            <script src="Personal Portfolio v1.js"></script>
             <title>Welcome!</title>
         </head>
         <body>
@@ -21,14 +22,18 @@
                 <div id="welcome-page">
                     <div class="welcome-page-items">
                         <h1>My name is Tyler!</h1>
-                        <h2>I am
-                            
+                        <h2>I am a soon-to-be Developer,</h2>
+                        <h2>and I am
+                            <span>
+                                <output id="textbox"></output>
+                            </span>
                         </h2>
                     </div>
                     <div class="welcome-page-items">    
                         <input type="button"
-                                value="generate"
-                                name="generator">
+                                value="Show"
+                                name="generator"
+                                onclick="randomWord()"/>
                     </div>
                 </div>
             </main>
