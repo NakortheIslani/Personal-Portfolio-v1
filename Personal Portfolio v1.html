@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <meta description="Personal Portfolio">
-            <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="Personal Portfolio v1 styles.css">
             <script src="Personal Portfolio v1.js"></script>
             <title>Welcome!</title>
@@ -13,30 +13,37 @@
                 <div class="nav-bar">
                     <p id="logo">Portfolio</p>
                         <a class="nav-link" href="#">Welcome</a>
-                        <a class="nav-link" href="#">About</a>
                         <a class="nav-link" href="#">Projects</a>
                         <a class="nav-link" href="#">Contact</a>
                 </div>
             </nav>
             <main>
-                <div id="welcome-page">
-                    <div class="welcome-page-items">
-                        <h1>My name is Tyler!</h1>
-                        <h2>I am a soon-to-be Developer,</h2>
-                        <h2>and I am
-                            <span>
-                                <output id="textbox"></output>
-                            </span>
-                        </h2>
+                <section>
+                    <div id="welcome-page">
+                        <div class="welcome-page-items">
+                            <h1>My name is Tyler!</h1>
+                            <h2>I am a soon-to-be Developer,</h2>
+                            <h2>and I am
+                                <span>
+                                    <output id="textbox"></output>
+                                </span>
+                            </h2>
+                        </div>
+                        <div class="welcome-page-items">    
+                            <input type="button"
+                                    value="Push Me"
+                                    name="generator"
+                                    onclick="randomWord()"/>
+                        </div>
                     </div>
-                    <div class="welcome-page-items">    
-                        <input type="button"
-                                value="Show"
-                                name="generator"
-                                onclick="randomWord()"/>
-                    </div>
-                </div>
+                </section>
+                <section>
+                    <div id="project-grid"></div>
+                    <h2>Projects</h2>
+                </section>
             </main>
 
         </body>
     </html>
+
+    
