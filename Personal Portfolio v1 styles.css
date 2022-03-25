@@ -3,6 +3,11 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+    text-decoration: underline italic;
+}
+
 #logo {
     display: flex;
     margin: 0 auto 0 15px;
@@ -44,5 +49,15 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+#textbox {
+    background-color: #f89;
+    border: none;
+    font-family: "Inter", sans-serif;
+    width: 200px;
+    height: 30px;
+    font-size: 30px;
+    color: black;
 }
 
