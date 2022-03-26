@@ -1,14 +1,14 @@
 #project-grid {
     display: grid;
-    grid-template-rows: 20vh 40vh 40vh;
+    grid-template-rows: 100px 300px 300px 100px;
     grid-template-columns: 5% 30% 30% 30% 5%;
     background-color: cadetblue;
-    gap: 10px 10px;
 }
 
 .grid-header {
     display: flex;
-    grid-column: 3 / 3;
+    grid-column: 2 / 5;
     justify-content: center;
     align-items: center;
+    background-color: antiquewhite;
 }
