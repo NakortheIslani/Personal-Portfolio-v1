@@ -1,8 +1,9 @@
 #project-grid {
     display: grid;
-    grid-template-rows: 100px 300px 300px 100px;
-    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-rows: 65px repeat(2, 265px) 65px;
+    grid-template-columns: 2.4% repeat(3, 27.4%) 2.4%;
     background-color: cadetblue;
+    gap: 70px 3.25%;
 }
 
 .grid-header {
@@ -13,31 +14,137 @@
     background-color: antiquewhite;
 }
 
-.project-card-one {
+.placement-one {
     grid-area: 2 / 2 / 2 / 2;
 }
 
-.project-card-two {
+.placement-two {
     grid-area: 2 / 3 / 2 / 3;
 }
 
-.project-card-three {
+.placement-three {
     grid-area: 2 / 4 / 2 / 4;
 }
 
-.project-card-four {
+.placement-four {
     grid-area: 3 / 2 / 3 / 2;
 }
 
-.project-card-five {
+.placement-five {
     grid-area: 3 / 3 / 3 / 3;
 }
 
-.project-card-six {
+.placement-six {
     grid-area: 3 / 4 / 3 / 4;
 }
 
+.button {
+    grid-area: 4 / 3 / 4 / 3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.project-card-style {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
 .project-img {
-    height: 200px;
-    width: 350px;
+    height: 220px;
+    width: 100%;
+}
+
+body {
+    margin: 0 0;
+}
+
+@media all and (max-width: 1200px) {
+    #project-grid {
+        grid-template-rows: 65px repeat(3, 295px) 65px;
+        grid-template-columns: 2% repeat(2, 40.5%) 2%;
+        gap: 70px 5%;
+    }
+
+    .grid-header {
+        grid-column: 2 / 4;
+    }
+
+    .placement-one {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+    
+    .placement-two {
+        grid-area: 2 / 3 / 2 / 3;
+    }
+    
+    .placement-three {
+        grid-area: 3 / 2 / 3 / 2;
+    }
+    
+    .placement-four {
+        grid-area: 3 / 3 / 3 / 3;
+    }
+    
+    .placement-five {
+        grid-area: 4 / 2 / 4 / 2;
+    }
+    
+    .placement-six {
+        grid-area: 4 / 3 / 4 / 3;
+    }
+
+    .button {
+        grid-area: 5 / 2 / 5 / 4;
+    }
+
+    .project-img {
+        height: 250px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    #project-grid {
+        grid-template-rows: 65px repeat(6, 325px) 65px;
+        grid-template-columns: 2% 86% 2%;
+        gap: 70px 5%;
+    }
+
+    .grid-header {
+        grid-column: 2 / 2;
+    }
+
+    .placement-one {
+        grid-area: 2 / 2 / 2 / 2;
+    }
+    
+    .placement-two {
+        grid-area: 3 / 2 / 3 / 2;
+    }
+    
+    .placement-three {
+        grid-area: 4 / 2 / 4 / 2;
+    }
+    
+    .placement-four {
+        grid-area: 5 / 2 / 5 / 2;
+    }
+    
+    .placement-five {
+        grid-area: 6 / 2 / 6 / 2;
+    }
+    
+    .placement-six {
+        grid-area: 7 / 2 / 7 / 2;
+    }
+
+    .button {
+        grid-area: 8 / 2 / 8 / 2;
+    }
+
+    .project-img {
+        height: 280px;
+    }
 }
