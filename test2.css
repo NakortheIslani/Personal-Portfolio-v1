@@ -12,3 +12,32 @@
     align-items: center;
     background-color: antiquewhite;
 }
+
+.project-card-one {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.project-card-two {
+    grid-area: 2 / 3 / 2 / 3;
+}
+
+.project-card-three {
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+.project-card-four {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+.project-card-five {
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+.project-card-six {
+    grid-area: 3 / 4 / 3 / 4;
+}
+
+.project-img {
+    height: 200px;
+    width: 350px;
+}
