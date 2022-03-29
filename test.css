@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+  div > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    grid-gap: 4rem;
+    list-style: none;
+    padding-inline-start: 0px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .project-card-style {
+    max-height: 350px;
+    overflow: hidden;
+    border-radius: .5rem;
+    position: relative;
+  }
+
+  .project-img {
+      width: 100%;
+  }
