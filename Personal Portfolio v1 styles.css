@@ -79,9 +79,57 @@ h2 {
     font-style: italic;
 }
 
-#project-grid {
+div > ul {
     display: grid;
-    height: 100vh;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    grid-gap: 3.5rem;
+    list-style: none;
+    padding-inline-start: 0px;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 
-}
+  .project-card-style {
+    max-height: auto;
+    background-color: aqua;
+    box-shadow: 1px 1px 1px 1px black, -1px -1px 1px 1px black, -1px 1px 1px 1px black, 1px -1px 1px 1px black;
+    /* change rgba */
+  }
 
+  .project-img {
+      width: 100%;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+
+  .project-links {
+    text-decoration: none;
+    color: black;
+  }
+
+  .grid-header {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-bottom: 3em;
+    background-color: bisque;
+    /* margin for top/welcome page maybe necessary */
+  }
+
+  .button {
+    display: block;
+    /* text-align: center; */
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 3em auto 3em auto;
+    border: 1px solid black;
+    background: rgb(150, 161, 110);
+    width: fit-content;
+    padding: 5px 10px;
+    color: black;
+  }
