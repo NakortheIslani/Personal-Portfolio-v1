@@ -1,7 +1,8 @@
 body {
     margin: 0 0;
     font-family: 'Ubuntu', sans-serif;
-    background: -webkit-linear-gradient(63deg, darkslategrey, rgb(184, 165, 165));
+    background: -webkit-repeating-linear-gradient(80deg, #222831 25%, #393E46 70%);
+    color: whitesmoke;
 }
 
 h1 {
@@ -17,6 +18,7 @@ h2 {
 h3 {
     font-size: 28px;
     font-weight: 400;
+    color: #00ADB5;
 }
 
 #logo {
@@ -25,6 +27,7 @@ h3 {
     width: 190px;
     justify-content: center;
     font-size: 40px;
+    color: black;
 }
 
 @media all and (max-width: 550px) {
@@ -85,10 +88,9 @@ h3 {
 }
 
 #textbox {
-    background-color: #f89;
     font-family: "Inter", sans-serif;
     font-size: 1.2em;
-    color: black;
+    color: #b52ee1;
     font-style: italic;
 }
 
@@ -124,9 +126,9 @@ div > ul {
 
   .project-card-style {
     margin: 0 10px;
-    background-color: aqua;
-    box-shadow: 1px 1px 1px 1px black, -1px -1px 1px 1px black, -1px 1px 1px 1px black, 1px -1px 1px 1px black;
-    /* change rgba */
+    background-color: #222831;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 2px;
   }
 
   .project-img {
@@ -137,6 +139,7 @@ div > ul {
     text-align: center;
     font-size: 1.2rem;
     margin: 5px 0;
+    color: #b52ee1;
   }
 
   .project-links {
@@ -152,14 +155,23 @@ div > ul {
   .button {
     display: block;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 3em auto 3em auto;
-    border: 1px solid black;
-    background: rgb(150, 161, 110);
     width: fit-content;
     padding: 5px 10px;
-    color: black;
+    color: whitesmoke;
   }
+
+  .generator {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      font-size: 1.4rem;
+      color: whitesmoke;
+  }
+
+  /* Add hover and transitions to button and generator */
+  /* Then just finish linking socials w/ href and id for project finish. */
+  /* Also figure out spacing issue in vs code and fix css spacing. */
 
   .contact-header {
       display: flex;
@@ -190,12 +202,16 @@ div > ul {
       justify-content: center;
       font-size: 25px;
       text-decoration: none;
-      color: black;
+      color: #b52ee1;
       width: fit-content;
   }
 
   .last-link {
     grid-column: 1 / 3;
+  }
+
+  .link-color {
+      color: #00ADB5;
   }
  
   @media all and (max-width: 380px) {
@@ -203,15 +219,8 @@ div > ul {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
-        /* justify-content: center; */
         align-items: center;
     }
-  }
-
-  .contact-img {
-      height: 50px;
-      width: 50px;
-      background: white;
   }
 
   i {
