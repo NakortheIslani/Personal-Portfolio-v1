@@ -9,13 +9,14 @@ var words = [
     'Awesome.',
     'a Problem Solver.',
     'Legendary.',
-    'Alien.',
-    'An Array of Positive Adjectives.',
+    'an Alien.',
+    'an Array of Positive Adjectives.',
     'a Meat Popsicle.',
     'Spartacus.',
     'Batman.',
     'Ironman.',
-    'Pickle Rick!!!'
+    'Pickle Rick!!!',
+    'Not Really an Alien.'
 ];
 
 function randomWord() {
