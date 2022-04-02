@@ -69,6 +69,11 @@ h3 {
     justify-content: center;
     text-decoration: none;
     color: whitesmoke;
+    transition: all .8s cubic-bezier(0.45, 0, 0.55, 1) 0s;
+}
+
+.nav-link:hover {
+    transform: translateY(3px)
 }
 
 #welcome-page {
@@ -141,8 +146,13 @@ div>ul {
     color: #00dbe7;
 }
 
-.description:hover {
-    
+li>a:hover {
+    transform: translateY(-3px);
+    word-spacing: 10px;
+}
+
+li>a {
+    transition: all .8s cubic-bezier(0.45, 0, 0.55, 1) 0s;
 }
 
 .project-links {
@@ -180,18 +190,8 @@ div>ul {
     color: #9e1ae0;
 }
 
-.contact-link:hover {
-    transform: translateX(5px);
-}
-
-.link-color:hover {
-    color: #9e1ae0;
-}
-
-
 /* Add hover and transitions to button and generator */
 /* Then just finish linking socials w/ href and id for project finish. */
-/* Also figure out spacing issue in vs code and fix css spacing. */
 
 .contact-header {
     display: flex;
@@ -229,6 +229,10 @@ div>ul {
     transition: transform .8s cubic-bezier(0.45, 0, 0.55, 1) 0s;
 }
 
+.contact-link:hover {
+    transform: translateX(5px);
+}
+
 .last-link {
     grid-column: 1 / 3;
 }
@@ -236,6 +240,10 @@ div>ul {
 .link-color {
     transition: all .8s cubic-bezier(0.45, 0, 0.55, 1) 0s;
     color: #aa79f9;
+}
+
+.link-color:hover {
+    color: #9e1ae0;
 }
 
 @media all and (max-width: 380px) {
@@ -246,9 +254,3 @@ div>ul {
         align-items: center;
     }
 }
-
-i {
-    height: 25px;
-    width: 25px;
-}
-
