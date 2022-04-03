@@ -1,8 +1,11 @@
+/* Then just finish linking socials w/ href and id for project finish. */
+
 body {
     margin: 0 0;
     font-family: 'Ubuntu', sans-serif;
     background: -webkit-repeating-linear-gradient(80deg, #222831 25%, #393E46 70%);
     color: whitesmoke;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -73,7 +76,7 @@ h3 {
 }
 
 .nav-link:hover {
-    transform: translateY(3px)
+    transform: translateY(3px);
 }
 
 #welcome-page {
@@ -152,7 +155,7 @@ li>a:hover {
 }
 
 li>a {
-    transition: all .8s cubic-bezier(0.45, 0, 0.55, 1) 0s;
+    transition: all .5s cubic-bezier(0.45, 0, 0.55, 1) 0s;
 }
 
 .project-links {
@@ -173,7 +176,7 @@ li>a {
     width: fit-content;
     padding: 5px 10px;
     color: #aa79f9;
-    transition: all .8s cubic-bezier(0.45, 0, 0.55, 1) 0s;
+    transition: all .5s cubic-bezier(0.45, 0, 0.55, 1) 0s;
 }
 
 .generator {
@@ -181,7 +184,7 @@ li>a {
     border: none;
     font-size: 1.8rem;
     color: #aa79f9;
-    transition: all .8s cubic-bezier(0.45, 0, 0.55, 1) 0s;
+    transition: all .5s cubic-bezier(0.45, 0, 0.55, 1) 0s;
 }
 
 .generator:hover,
@@ -190,21 +193,18 @@ li>a {
     color: #9e1ae0;
 }
 
-/* Add hover and transitions to button and generator */
-/* Then just finish linking socials w/ href and id for project finish. */
-
 .contact-header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 5rem;
-    color: #00dbe7;
+    color: whitesmoke;
 }
 
 .italic {
     font-style: italic;
-    color: whitesmoke;
+    color: #00dbe7;
 }
 
 .contact-box {
@@ -226,7 +226,7 @@ li>a {
     text-decoration: none;
     width: fit-content;
     color: whitesmoke;
-    transition: transform .8s cubic-bezier(0.45, 0, 0.55, 1) 0s;
+    transition: transform .5s cubic-bezier(0.45, 0, 0.55, 1) 0s;
 }
 
 .contact-link:hover {
@@ -238,7 +238,7 @@ li>a {
 }
 
 .link-color {
-    transition: all .8s cubic-bezier(0.45, 0, 0.55, 1) 0s;
+    transition: all .5s cubic-bezier(0.45, 0, 0.55, 1) 0s;
     color: #aa79f9;
 }
 
@@ -252,5 +252,30 @@ li>a {
         flex-direction: column;
         row-gap: 20px;
         align-items: center;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .link-color:hover {
+        color: #aa79f9;
+    }
+
+    .contact-link:hover {
+        transform: none;
+    }
+
+    .generator:hover,
+    .button:hover {
+        transform: none;
+        color: #aa79f9;
+    }
+
+    li>a:hover {
+        transform: none;
+        word-spacing: 0px;
+    }
+
+    .nav-link:hover {
+        transform: none;
     }
 }
